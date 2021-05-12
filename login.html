@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <meta name="description" content="Web Teklonojileri Projesi" />
+    <meta name="keywords" content="CSS,HTML,JAVASCRIPT,PHP" />
+    <meta name="author" content="Furkan Akdas" />
+    <meta name="viewport" content="width=device-width" initial-scale=1.0/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" 
+     rel="stylesheet"
+     integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" 
+     crossorigin="anonymous">
+     
+     <link rel="stylesheet" href="css/loginCSS.CSS">
+    <title>LOGÍN</title>
+   
+</head>
+<body onload="sil();">
+    <div  class="logo">
+        <img width="140px"
+         
+        height="140px"
+         src="img\meeting.jpg">
+        </div>
+        <div class="bannerYazi">
+            FURKAN AKDAŞ
+        </div>
+    </header>
+    
+    <nav>
+        <div class="nav">
+            <a href="#">HAKKIMDA</a>
+            <a href="#">ÖZGEÇMİŞİM</a>
+            <a href="#">İLGİ ALANLARIM</a>
+            <a href="#">ŞEHRİM</a>
+            <a class="active" href="#">LOG IN</a>
+            <a href="#">İLETİŞİM</a>
+          </div>
+    </nav>
+
+    <main>
+
+       <section>
+        <form action="http://localhost/PHP/Login.php" method="get">
+            <div class="form-group">
+              <label id="lKullaniciAdi" for="exampleInputEmail1">Kullanıcı Adı (E-mail):</label>
+              <input  name="kullaniciAdi" id="iKullaniciAdi" type="email" class="form-control" required  aria-describedby="emailHelp" placeholder="Kullanıcı Adınızı Girin">
+              
+            </div>
+            <div class="form-group">
+              <label id="lSifre" for="exampleInputPassword1">Şifre:</label>
+              <input name="sifre" id="iSifre" type="password" class="form-control" required placeholder="Şifrenizi Girin">
+            </div>
+            <div class="form-group form-check">
+              <input id="iBeniHatirla" type="checkbox" class="form-check-input" >
+              <label class="form-check-label" for="exampleCheck1">Beni Hatırla</label>
+            </div>
+            <button id="bGonder" type="submit" class="btn btn-primary">GİRİŞ</button>
+          </form>
+       </section>
+
+       <div class="loginBaslik">
+           LOG IN
+       </div>
+
+       
+
+    </main>
+
+</body>
+</html>

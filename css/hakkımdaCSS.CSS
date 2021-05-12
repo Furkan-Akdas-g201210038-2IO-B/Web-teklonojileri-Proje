@@ -1,0 +1,204 @@
+
+.logo
+{
+    
+    float: left;
+    width: 13%;
+    height: 150px;
+    margin:25px 0 0 190px;
+
+}
+
+.bannerYazi{
+    
+    float:left;
+    width: 60%;
+    height: 120px;
+    margin:30px 0 0 -30px;
+    text-align: center;  
+    font-size:100px;
+    font-weight:3px;
+    font-family:fantasy;
+    letter-spacing: 10px;
+    color: rgb(78, 80, 80);
+}
+
+.nav{
+  
+    width: 100%;
+    height:60px;
+    clear:both;
+    margin:10px 0 0 0px;
+    background-color:rgb(94, 90, 90);
+    border-radius: 5px;
+}
+
+.nav a {
+   
+    display:inline-block;
+    color: white;
+    text-align: center;   
+    text-decoration: none;
+    font-size: 18px;
+    border-radius: 5px; 
+    padding:20px 20px 19px 20px ;
+    background-color:rgb(94, 90, 90);
+    font-weight:700;
+    margin:0 0 0 85px;
+    letter-spacing: 1px;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  
+  .nav a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  
+  .nav .aLogin:hover {
+    background-color: rgb(155, 153, 44);
+    color: black;
+  }
+  
+  .nav a.active {
+    background-color: rgb(212, 221, 221);
+    color: white;
+    border-radius:5px 5px 0px 0px;
+  }
+
+
+  main{
+    clear: both;
+    width: 100%;
+    height: 1000px;
+    background-color: rgb(212, 221, 221);
+    border: 1px solid rgb(212, 221, 221);
+    position: relative;
+    z-index: 1;
+  }
+
+  article{
+    width: 50%;
+    height: 320px;
+    border:6px solid black;
+    border-style:inset;
+    top:68px;
+    left:390px;
+    position:relative;
+    z-index: 2;
+    background:url("C:/Users/furak/Desktop/WebTeklonojileriProjesi/Web-teklonojileri-Proje/img/z.jpg");
+    border-radius: 10px;
+    opacity: 0.7;
+    line-height: 35px;
+    text-align: justify;
+    text-indent: 50px;
+    padding: 40px 12px 0 12px;
+    font-weight: 800;
+    font-size: 18px;
+    color:rgb(139, 32, 32)
+  }
+
+  .articleBaslik{
+    width:15%;
+    height:20px;;
+    left:450px;
+    top:79px;
+    position:relative;
+    z-index: 3;
+    background-color:rgb(212, 221, 221) ;
+    color:rgb(58, 68, 201);
+    font: 600 20px tahoma;
+    letter-spacing: 2px;
+    text-align: center;
+  }
+
+  .altMetin
+  {
+    color:rgb(19, 2, 49);  
+    text-indent:50px;   
+  }
+  section[id="tanismaUyg"]
+  {
+    position: relative;
+    border:10px inset rgb(5, 40, 80);
+    width: 700px;
+    height: 430px;
+    top:150px;
+    left:425px;
+    border-radius: 20px;
+  }
+
+  #secmeKutu
+  {
+    position: relative;
+    top:30px;
+    left:10px;
+         width: 290px;
+         background: darkslategrey;
+         color:salmon;
+         font-size:18px;
+  }
+
+  
+
+  .tanismaBaslik
+  {
+     
+     position: relative;
+     z-index: 2;
+     width: 30%;
+     top:-262px;
+     left:70px;
+     background:rgb(212, 221, 221);
+     font:600 25px tahoma;
+     color:rgb(66, 14, 87);
+     text-align: center;
+     border-radius: 5px;
+     
+  }
+
+
+  .tanismaResimLink
+  {
+     border:6px inset rgb(78, 80, 80);
+     position: relative;
+     top:-20px;
+     left:330px;
+     width:330px ;
+     border-radius: 5px;
+     height: 200px;
+     z-index: 2;
+     color:rgb(172, 37, 88)
+  }
+  
+  .tanismaMetin
+  {
+    position: relative;
+   border:4px solid rgb(175, 185, 35);
+   width: 300px;
+   height: 170px;
+   left:343px;
+   top:-40px;
+   border-radius: 5px;
+   color:rgb(165, 116, 10);
+   font:900 15px tahoma;
+   text-indent: 10px;
+   padding:10px 5px 0 5px ;
+   line-height: 22px;
+  }
+  
+  #resimLink{
+    display: block;
+    width:0px ; 
+  }
+
+  #resimLink:hover .tanismaResimLink
+  {
+    box-shadow: 4px 4px 20px rgb(80, 172, 27),-4px -4px 20px rgb(80, 172, 27);
+  }
+
+  
+  
+    
+    
+  
