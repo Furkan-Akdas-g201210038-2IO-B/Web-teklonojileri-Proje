@@ -142,7 +142,6 @@ function a(secmeKutusu)
 
 
 
-
 /*var sayac=0;      
     var zaman=setInterval(function(){
         sayac++;
