@@ -22,44 +22,18 @@
     color: rgb(78, 80, 80);
 }
 
-.nav{
-  
+nav
+{
+    
     width: 100%;
-    height:66px;
-    clear:both;
-    margin:10px 0 0 0px;
-    background-color:rgb(94, 90, 90);
-    border-radius: 5px;
+    padding: 0 0 0 200px;
+    height: 80px;
+    font:500 32px fantasy;
 }
 
-.nav a {
-   
-    display:inline-block;
-    color: white;
-    text-align: center;   
-    text-decoration: none;
-    font-size: 18px;
-    border-radius: 5px; 
-    padding:20px 20px 19px 20px ;
-    background-color:rgb(94, 90, 90);
-    font-weight:700;
-    margin:0 0 0 85px;
-    letter-spacing: 1px;
-    font-family: Arial, Helvetica, sans-serif;
-  }
-  
-  
-  .nav a:hover {
-    background-color: #ddd;
-    color: black;
-  }
-  
-  
-  .nav a.active {
-    background-color: rgb(155, 153, 44);
-    color: white;
-    border-radius:5px 5px 0px 0px;
-  }
+nav li{
+    padding: 0 50px 0 0px;
+}
 
 
   main
@@ -120,6 +94,83 @@
     letter-spacing: 1px;
   }
 
-  
+  footer
+  {
+      width: 100%;
+      height: 135px;
+      background: rgb(155, 110, 105);
+     
+      
+  }
+
+  .footerDiv
+  {
+      position: relative;
+      top: 55px;
+      left:550px;
+      font:600 18px tahoma;
+      color:rgb(17, 32, 119)
+  }
+
+  .f1
+  {
+    position: relative;
+    top: -15px;
+    left:1050px;
+  }
+
+  .f1:hover{
+      opacity: 0.6;
+  }
+
+  .fc1
+  {
+   font: 300 18px fantasy;
+    position: relative;
+    top: -58px;
+    left:1095px;
+    letter-spacing: 1px;
+  }
+
+  .f2
+  {
+    position: relative;
+    top: -40px;
+    left:1050px;
+  }
+
+  .f2:hover{
+      opacity: 0.6;
+  }
+
+  .fc2
+  {
+   font: 300 18px fantasy;
+    position: relative;
+    top: -82px;
+    left:1095px;
+    letter-spacing: 1px;
+  }
+
+
+  .f3
+  {
+    position: relative;
+    top: -67px;
+    left:1050px;
+  }
+
+  .f3:hover{
+      opacity: 0.6;
+  }
+
+  .fc3
+  {
+   font: 300 18px fantasy;
+    position: relative;
+    top: -109px;
+    left:1095px;
+    letter-spacing: 1px;
+  }
 
  

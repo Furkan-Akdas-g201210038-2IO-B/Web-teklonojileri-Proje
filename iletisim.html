@@ -13,7 +13,9 @@
      crossorigin="anonymous">
      
      <link rel="stylesheet" href="css/iletisimCSS.CSS">
-     
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+ integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+ crossorigin="anonymous"></script>
     <title>İLETİŞİM</title>
    
 </head>
@@ -31,15 +33,39 @@
     </div>
 </header>
 
-<nav>    
-    <div class="nav">
-        <a  href="#">HAKKIMDA</a>
-        <a href="#">ÖZGEÇMİŞİM</a>
-        <a href="#">İLGİ ALANLARIM</a>
-        <a href="#">ŞEHRİM</a>
-        <a class="aLogin" href="login.html">LOG IN</a>
-        <a class="active" href="#">İLETİŞİM</a>
-      </div>
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark ">
+  <div class="container-fluid">
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link " aria-current="page" href="index.html">Hakkımda</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link " href="ozgecmis.html">Özgeçmişim</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">İlgi Alanlarım</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Şehrim
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" href="sehrim.html">Şehrim Hakkında</a></li>             
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="#">Şehrimin Mirası</a></li>
+          </ul>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="login.html">LOG IN</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" href="iletisim.html">İLETİŞİM</a>
+        </li>
+      
+      
+    </div>
+  </div>
 </nav>
 
 <main>
@@ -50,14 +76,14 @@
        <form method="get" action="http://localhost/WebTeklonojileriProjesi/Web-teklonojileri-Proje/php/iletisim.php">
         <div class="row">
             <div class="col-md-6">
-        <label class="lbl" for="isim">İSİM(zorunlu)</label> 
+        <label class="lbl" for="isim">*İSİM</label> 
         <div class="form-floating mb-3">             
         <input onkeyup="funIsim()" type="text" class="form-control"  id="isim" name="isim" placeholder="İsminizi Giriniz">
         <label for="isim">İsminizi Giriniz</label>
         </div><div class="uyari"></div><br>
     </div>
     <div class="col-md-6">
-        <label class="lbl" for="soyad">SOYAD(zorunlu)</label> 
+        <label class="lbl" for="soyad">*SOYAD</label> 
         <div class="form-floating mb-3">             
         <input onkeyup="funSoyad()" type="search" class="form-control" id="soyad" name="soyad" placeholder="Soyadınızı Giriniz">
         <label for="soyad">Soyadınızı Giriniz</label>
@@ -66,14 +92,14 @@
         </div>
         <div class="row">
             <div class="col-md-6">
-        <label class="lbl" for="Email">E-MAİL(zorunlu)</label> 
+        <label class="lbl" for="Email">*E-MAİL</label> 
         <div class="form-floating mb-3">             
         <input onkeyup="funEmail()" type="text" class="form-control" id="Email" name="Email" placeholder="E-Mailinizi Giriniz">
         <label for="Email">E-Mailinizi Giriniz</label>
         </div><div class="uyari"></div><br>
     </div>
     <div class="col-md-6">
-        <label class="lbl" for="telNo">TELEFON NO(zorunlu)</label> 
+        <label class="lbl" for="telNo">*TELEFON NO</label> 
       <div class="form-floating mb-3">             
       <input onkeyup="funTelNo()" type="search" class="form-control" id="telNo" name="telNo" placeholder="Telefon Numaranızı Giriniz">
       <label for="telNo">Telefon Numaranızı Giriniz</label>
@@ -83,12 +109,12 @@
     <div class="row">
         <div class="col-md-6">
             <div class="mb-3">
-                <label for="dogumTarihi" class="lbl">DOĞUM TARİHİ(zorunlu)</label>
+                <label for="dogumTarihi" class="lbl">*DOĞUM TARİHİ</label>
                 <input  onfocusout="funDogumTarihi()" name="dogumTarihi" type="date" class="form-control" id="dogumTarihi" >
               </div><div class="uyari"></div><br>
             </div>
     <div class="col-md-6">
-        <label for="sehir" class="lbl">YAŞADIĞINIZ ŞEHİR(zorunlu)</label>
+        <label for="sehir" class="lbl">*YAŞADIĞINIZ ŞEHİR</label>
     <input onfocusout="funSehir()" class="form-control" list="liste" name="sehir" id="sehir" placeholder="Yaşadığınız Şehri Seçiniz">
       <datalist id="liste">     
         <option value="İstanbul" >İstanbul</option>
@@ -113,16 +139,16 @@
     </div>
      <div class="row">
       <div class="col-md-6">  
-        <label id="lblOzel" for="erkek" class="lbl">Cinsiyet(zorunlu)</label><br><br>
+        <label id="lblOzel" for="erkek" class="lbl">*Cinsiyet</label><br><br>
         <div class="form-check form-check-inline">
             <input onclick="funCinsiyet()" class="form-check-input" type="radio" name="cinsiyet" value="Erkek" id="erkek">
-            <label class="form-check-label " for="Erkek">
+            <label  class="form-check-label " for="Erkek"   style="color:rgb(115, 158, 34);">
               Erkek
             </label>
           </div>
           <div class="form-check form-check-inline">
             <input onclick="funCinsiyet()" class="form-check-input" type="radio" name="cinsiyet" value="Kadın" id="kadin" >
-            <label class="form-check-label" for="kadin">
+            <label style="color:rgb(115, 158, 34);" class="form-check-label" for="kadin" style="color:rgb(115, 158, 34);">
               Kadın
             </label>
           </div><div class="uyari"></div>
@@ -139,38 +165,38 @@
             <br><br> <label id="lblOzel" for="kitapOkuma" class="lbl">Hobiler</label><br><br>
             <div class="form-check form-check-inline">
                 <input class="form-check-input" type="checkbox" id="kitapOkuma" name="hobi[]" value="Kitap Okumak">
-                <label class="form-check-label" for="kitapOkuma">Kitap Okumak</label>
+                <label class="form-check-label" for="kitapOkuma" style="color:rgb(115, 158, 34);">Kitap Okumak</label>
               </div>
               <div class="form-check form-check-inline">
                 <input class="form-check-input" type="checkbox" id="sinemayaGitme" name="hobi[]" value="Sinemaya Gitmek">
-                <label class="form-check-label" for="sinemayaGitme">Sinemaya Gitmek</label>
+                <label  class="form-check-label" for="sinemayaGitme" style="color:rgb(115, 158, 34);">Sinemaya Gitmek</label>
               </div>
               <div class="form-check form-check-inline">
                 <input class="form-check-input" type="checkbox" id="sporYapma" name="hobi[]" value="Spor Yapmak">
-                <label class="form-check-label" for="sporYapma">Spor Yapmak</label>
+                <label  class="form-check-label" for="sporYapma" style="color:rgb(115, 158, 34);">Spor Yapmak</label>
               </div>
               <div class="form-check form-check-inline">
                 <input class="form-check-input" type="checkbox" id="resimYapma" name="hobi[]" value="Resim Yapmak">
-                <label class="form-check-label" for="resimYapma">Resim Yapmak</label>
+                <label  class="form-check-label" for="resimYapma" style="color:rgb(115, 158, 34);">Resim Yapmak</label>
               </div>
               <div class="form-check form-check-inline">
                 <input class="form-check-input" type="checkbox" id="gezme" name="hobi[]" value="Gezmek">
-                <label class="form-check-label" for="gezme">Gezmek</label>
+                <label  class="form-check-label" for="gezme" style="color:rgb(115, 158, 34);">Gezmek</label>
               </div>
               <div class="form-check form-check-inline">
                 <input class="form-check-input" type="checkbox" id="yeniInsanlarlaTanisma" name="hobi[]" value="Yeni Insanlarla Tanismak">
-                <label class="form-check-label" for="yeniInsanlarlaTanisma">Yeni Insanlarla Tanismak</label>
+                <label  class="form-check-label" for="yeniInsanlarlaTanisma" style="color:rgb(115, 158, 34);">Yeni Insanlarla Tanismak</label>
               </div>
               <div class="form-check form-check-inline">
                 <input class="form-check-input" type="checkbox" id="ailemleVakitGecirmek" name="hobi[]" value="Ailemle Vakit Gecirmek">
-                <label class="form-check-label" for="ailemleVakitGecirmek">Ailemle Vakit Gecirmek</label>
+                <label  class="form-check-label" for="ailemleVakitGecirmek" style="color:rgb(115, 158, 34);">Ailemle Vakit Gecirmek</label>
               </div><div class="uyari"></div>
               
          </div>
         </div>       
         <div class="row">
             <div class="col-md-6">
-                <br> <label for="egitimDüzeyi" class="lbl">Eğitim Düzeyi(zorunlu)</label><br>
+                <br> <label for="egitimDüzeyi" class="lbl">*Eğitim Düzeyi</label><br>
                 <select onfocusout="funEgitimDuzeyi()" name="egitimDuzeyi" id="egitimDuzeyi" class="form-select" aria-label="Default select example">
                     <option value="">Eğitim Düzeyinizi Seçiniz</option>
                     <option value="okumadım">Okumadım</option>
@@ -182,7 +208,7 @@
             </div>
             <div class="col-md-6">
                 <div class="form-group">
-                   <br><label class="lbl" for="bilinenDiller">Bilinen Dil Sayısı(zorunlu)</label><br>
+                   <br><label class="lbl" for="bilinenDiller">*Bilinen Dil Sayısı</label><br>
                     <input onfocusout="funBilinenDiller()" name="bilinenDiller" type="number" class="form-control" id="bilinenDiller" placeholder="Bildiğiniz Dillerin Sayısını Giriniz">
                   </div><div class="uyari"></div>
             </div>
@@ -211,7 +237,8 @@
         </div>
       <br><br><br>
         <div  class="row">
-            <div class="uyariButon">"GÖNDER" Butonu zorunlu alanlar uygun bir şekilde doldurulduğunda aktif olur</div>
+            <div class="uyariButon">"GÖNDER" Butonu zorunlu alanlar uygun bir şekilde doldurulduğunda aktif olur.<br>
+              * işareti bu alan zorunludur anlamına gelir<br><br></div>
             <br><br>
             <div  class="btn-group" role="group" aria-label="Basic example">             
                 <button id="butonGonder" type="submit" class="btn btn-primary" disabled>Gönder</button>
@@ -228,6 +255,18 @@
     </section>
 </main>
 
+<footer>
+  <div class="footerDiv">Beni yandaki linklerden takip edebilirsiniz.</div>
+
+  <figure class="f1"><a href="https://tr-tr.facebook.com/"><img class="rounded" src="img/face.jpg" width="30"></a></figure>
+  <figcaption class="fc1"><a href="https://tr-tr.facebook.com/" style="text-decoration:none;">Facebook</a></figcaption>
+
+  <figure class="f2"><a href="https://www.instagram.com/?hl=tr"><img class="rounded" src="img/instan.jpg" width="30"></a></figure>
+  <figcaption class="fc2"><a href="https://www.instagram.com/?hl=tr" style="text-decoration:none;">İnstagram</a></figcaption>
+
+  <figure class="f3"><a href=""><img class="rounded" src="img/twitn.png" width="30"></a></figure>
+  <figcaption class="fc3"><a href="" style="text-decoration:none;">Twitter</a></figcaption>
+</footer>
 
 <script src="js/iletisim.js"></script>
 </body>

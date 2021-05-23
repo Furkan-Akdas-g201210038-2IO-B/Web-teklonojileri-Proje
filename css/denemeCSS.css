@@ -1,4 +1,3 @@
-
 .logo
 {
     
@@ -35,7 +34,6 @@ nav
 nav li{
     padding: 0 50px 0 0px;
 }
-
 
   main{
     clear: both;
@@ -92,7 +90,7 @@ nav li{
     position: relative;
     border:10px inset rgb(5, 40, 80);
     width: 700px;
-    height: 480px;
+    height: 440px;
     top:150px;
     left:425px;
     border-radius: 20px;
@@ -115,7 +113,7 @@ nav li{
      position: relative;
      z-index: 2;
      width: 30%;
-     top:-297px;
+     top:-282px;
      left:70px;
      background:rgb(212, 221, 221);
      font:600 25px tahoma;
@@ -164,86 +162,3 @@ nav li{
   {
     box-shadow: 4px 4px 20px rgb(80, 172, 27),-4px -4px 20px rgb(80, 172, 27);
   }
-  footer
-  {
-      width: 100%;
-      height: 135px;
-      background: rgb(155, 110, 105);
-     
-      
-  }
-
-  .footerDiv
-  {
-      position: relative;
-      top: 55px;
-      left:550px;
-      font:600 18px tahoma;
-      color:rgb(17, 32, 119)
-  }
-
-  .f1
-  {
-    position: relative;
-    top: -15px;
-    left:1050px;
-  }
-
-  .f1:hover{
-      opacity: 0.6;
-  }
-
-  .fc1
-  {
-   font: 300 18px fantasy;
-    position: relative;
-    top: -58px;
-    left:1095px;
-    letter-spacing: 1px;
-  }
-
-  .f2
-  {
-    position: relative;
-    top: -40px;
-    left:1050px;
-  }
-
-  .f2:hover{
-      opacity: 0.6;
-  }
-
-  .fc2
-  {
-   font: 300 18px fantasy;
-    position: relative;
-    top: -82px;
-    left:1095px;
-    letter-spacing: 1px;
-  }
-
-
-  .f3
-  {
-    position: relative;
-    top: -67px;
-    left:1050px;
-  }
-
-  .f3:hover{
-      opacity: 0.6;
-  }
-
-  .fc3
-  {
-   font: 300 18px fantasy;
-    position: relative;
-    top: -109px;
-    left:1095px;
-    letter-spacing: 1px;
-  }
-  
-  
-    
-    
-  
