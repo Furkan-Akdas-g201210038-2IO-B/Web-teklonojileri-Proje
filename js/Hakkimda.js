@@ -12,32 +12,32 @@ function a(secmeKutusu)
         metin.innerHTML="25 EYLÜL 1998 tarihinde İngiltere'nin Leeds şehrinde doğdum.<br><br> " +
         "<span style=\"color:rgb(172, 37, 88);font-size:13px\">Yukarıdaki resme tıklayarak " +
          "'Leeds' hakkında bilgi edinebilirsiniz</span>"   ;
-        resim.src="img/leedsn.JPG";
+        resim.src="img/leedsn.jpg";
         link.href="https://tr.wikipedia.org/wiki/Leeds";
 
         zaman1=setInterval(function(){
             sayac++;
             if(sayac%3==0)resim.src="img/leedsn.JPG";
             else if(sayac%3==1) resim.src="img/leeds01.JPG";
-            else resim.src="img/leeds (1).JPG"
+            else resim.src="img/leeds (1).jpg"
            },1900)
     }
 
     else if(secmeKutusu[2].selected)
     {       
         metin.innerHTML="Sakarya Üniversitesinde Bilgisayar Mühendisi Öğrencisiyim. ";
-        resim.src="img/meslekn.JPG";
+        resim.src="img/meslekn.jpg";
     }
     else if(secmeKutusu[3].selected)
     {     
         metin.innerHTML="Hobilerim sinemaya gitmek,kitap okumak ve arkadaşlarımla vakit geçirmek. ";
-        resim.src="img/s.JPG";  
+        resim.src="img/s.jpg";  
               
         zaman2=setInterval(function(){
         sayac++;
-        if(sayac%3==0)resim.src="img/s.JPG";
-        else if(sayac%3==1) resim.src="img/okuman.JPG";
-        else resim.src="img/arkadas.JPG"
+        if(sayac%3==0)resim.src="img/s.jpg";
+        else if(sayac%3==1) resim.src="img/okuman.jpg";
+        else resim.src="img/arkadas.jpg"
        },1800)
                
     }
@@ -46,12 +46,12 @@ function a(secmeKutusu)
         metin.innerHTML="Isparta'da yaşıyorum.<br><br> " +
         "<span style=\"color:rgb(172, 37, 88);font-size:13px\">Yukarıdaki resme tıklayarak " +
         "'Isparta' hakkında bilgi edinebilirsiniz</span>";
-        resim.src="img/isparta.JPG";
+        resim.src="img/isparta.jpg";
         link.href="https://tr.wikipedia.org/wiki/Isparta";
 
         zaman3=setInterval(function(){
             sayac++;
-            if(sayac%3==0)resim.src="img/isparta.JPG";
+            if(sayac%3==0)resim.src="img/isparta.jpg";
             else if(sayac%3==1) resim.src="img/isparta(2).jpg";
             else resim.src="img/isparta(4).jpg"
            },1900)
@@ -89,12 +89,12 @@ function a(secmeKutusu)
         metin.innerHTML="İlgilendiğim Spor Dalı Futbol.<br><br> " +
         "<span style=\"color:rgb(172, 37, 88);font-size:13px\">Yukarıdaki resme tıklayarak " +
         "'Futbol' hakkında bilgi edinebilirsiniz</span>";
-        resim.src="img/top2.JPG";
+        resim.src="img/top2.jpg";
         link.href="https://tr.wikipedia.org/wiki/Futbol";
 
         zaman4=setInterval(function(){
             sayac++;
-            if(sayac%3==0)resim.src="img/top2.JPG";
+            if(sayac%3==0)resim.src="img/top2.jpg";
             else if(sayac%3==1) resim.src="img/top4.jpg";
             else resim.src="img/top3.jpg"
            },1900)
@@ -104,12 +104,12 @@ function a(secmeKutusu)
         metin.innerHTML="Tuttuğum Takım FenerBahçe.<br><br> " +
         "<span style=\"color:rgb(172, 37, 88);font-size:13px\">Yukarıdaki resme tıklayarak " +
         "'FenerBahçe' hakkında bilgi edinebilirsiniz</span>";
-        resim.src="img/fb1.JPG";
+        resim.src="img/fb1.jpg";
         link.href="https://tr.wikipedia.org/wiki/Fenerbah%C3%A7e_(futbol_tak%C4%B1m%C4%B1)";
 
         zaman5=setInterval(function(){
             sayac++;
-            if(sayac%3==0)resim.src="img/fb1.JPG";
+            if(sayac%3==0)resim.src="img/fb1.jpg";
             else if(sayac%3==1) resim.src="img/fb2.jpg";
             else resim.src="img/fbn.jpg"
            },1900)
@@ -119,12 +119,12 @@ function a(secmeKutusu)
         metin.innerHTML="En Sevdiğim Tablo 'Son Akşam Yemeği' Tablosudur.<br><br> " +
         "<span style=\"color:rgb(172, 37, 88);font-size:13px\">Yukarıdaki resme tıklayarak " +
         "'Son Akşam Yemeği' tablosu hakkında bilgi edinebilirsiniz</span>";
-        resim.src="img/resimn.JPG";
+        resim.src="img/resimn.jpg";
         link.href="https://tr.wikipedia.org/wiki/Son_Ak%C5%9Fam_Yeme%C4%9Fi_(tablo)";
 
         zaman6=setInterval(function(){
             sayac++;
-            if(sayac%3==0)resim.src="img/resimn.JPG";
+            if(sayac%3==0)resim.src="img/resimn.jpg";
             else if(sayac%3==1) resim.src="img/tablo2.jpg";
             else resim.src="img/tablo5.jpg";
            },1900)
@@ -142,10 +142,3 @@ function a(secmeKutusu)
 
 
 
-/*var sayac=0;      
-    var zaman=setInterval(function(){
-        sayac++;
-        if(sayac%2==0)resim.src="img/s.JPG";
-        else resim.src="img/okuman.JPG";
-       },2000)
-    if(!secmeKutusu[3].selected){clearInterval(zaman)}*/

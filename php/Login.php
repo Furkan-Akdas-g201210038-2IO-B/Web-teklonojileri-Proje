@@ -15,7 +15,7 @@ if($userName==$kullaniciAdi && $password==$sifre)
     echo "Şifre: $password";
 }else {
 
-    header("Location:http://localhost/WebTeklonojileriProjesi/Web-teklonojileri-Proje/login.html");
+    header("login.html");
     }
 
 ?>
