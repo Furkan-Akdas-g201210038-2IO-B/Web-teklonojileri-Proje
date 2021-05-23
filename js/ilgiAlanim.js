@@ -38,9 +38,18 @@ function put_info(title) {
             console.log(country);
             console.log(director);
 
-            var s =document.getElementById("aa");
-            s.innerHTML=plot;
-
+            document.getElementById("a1").innerHTML="<b>Adı:</b> "+title;
+            document.getElementById("a2").innerHTML="<b>Yıl: </b>"+year;
+            document.getElementById("a3").innerHTML=" <b>Yayınlanma Zamanı: </b>"+released;
+            document.getElementById("a4").innerHTML=" <b>Yayınlanma Süresi: </b>"+runtime;
+            document.getElementById("a5").innerHTML=" <b>Türü </b>"+genre;
+            document.getElementById("a6").innerHTML=" <b>Dil:</b>"+language;
+            document.getElementById("a7").innerHTML=" <b>Konu:</b>"+plot;
+            document.getElementById("a8").innerHTML=" <b>URK:</b>"+poster_url;
+            document.getElementById("a9").innerHTML=" <b>Oyuncular:</b>"+actors;
+            document.getElementById("a10").innerHTML=" <b>Ödüller:</b>" +awards;
+            document.getElementById("a11").innerHTML=" <b>Ülke:</b>"+country;
+            document.getElementById("a12").innerHTML=" <b>Yönetmen:</b>"+director;
 
         });
 }
